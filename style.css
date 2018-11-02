@@ -1,0 +1,245 @@
+/* global */
+
+*{
+    margin: 0;
+    padding: 0
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat' ,sans-serif;
+    background-color: #fff;
+}
+
+/* navigation */
+
+.head{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    min-height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 5px 5px darkblue;
+    color: #fff;
+}
+.head .logo{
+    cursor: pointer;
+    float: left;
+    font-size: 25px;
+    padding: 1rem  0 0 2rem;
+    animation: top-down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes top-down{
+    0%{transform: translate(0, -80px);}
+    100%{transform: translate(0);}
+}
+
+
+.navigation{
+    float: right;
+    box-sizing: border-box;
+}
+.navigation ul li{
+    display: inline-block;
+    margin: 1.5em;
+    list-style: none;
+}
+#logo-a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navigation ul li a:hover{
+    border-radius: 5px;
+    background: #ffffff;
+    color: black;
+}
+
+#nav-btn{
+    padding: 0 20px 0 80px;
+}
+.btn-1{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border: 0;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(255, 0, 255);
+    border-radius: 15px;
+}
+.btn-1:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}
+
+/* showcase */
+#showcase{
+    padding: 0 0 0 0;
+    background-image: url('./img/web.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.bounce-ani{
+    animation: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-40px);} 
+    60% {transform: translateY(-20px);} 
+}
+
+.text{
+    margin-top: 4em;
+    position: relative;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 750px;
+    height: 500px;
+    text-align: center;
+}
+.text h1{
+    font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.text p{
+    font-size: 20px;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    border-top: 4px solid green;
+    box-shadow: 0 5px 5px 0 #333;
+    color: #fff;
+    width: 100%;
+    margin: 0 0 0 0;
+    text-align: center;
+    background-color: #2C3335;
+}
+footer h5{
+    padding: 7px;
+}
+
+/* about page */
+
+hr{
+   margin: 2em;
+} 
+.wrapper{
+    text-align: justify;
+    line-height: 2.0;
+    padding: 1em;
+    width: 80%;
+    margin: 1em auto;
+}
+.grid-content-1{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto 40%;
+    grid-column-gap: 10px;
+    text-align: center;
+}
+.content-title .b-line{
+    border-bottom: 1px solid rgb(128, 117, 117);
+}
+
+.div-box{
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.float-box-1{
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 #333;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    z-index: -1;
+}
+.float-box-2{
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 #333;
+    position: relative;
+    margin-top: 5em;
+    margin-left: -1.5em;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 250px;
+    z-index: -1;
+}
+.float-box-3{
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 #333;
+    padding: 30px;
+    position: relative;
+    margin-top: 2em;
+    margin-left: -1.5em;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 250px;
+}
+
+/* Contact */
+
+.wrapper h1{
+    text-align: center;
+}
+.contact-form form{
+    line-height: 3.0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form input{
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+    outline: none;
+    width: 300px;
+    height: 30px;
+    border: 0;
+}
+.contact-form input[type='text'], input[type='number']{
+    border-bottom: 1px solid #333;
+}
+.cell button{
+    
+    position: relative;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-size: 100%;
+    background-color: #03a9f4;
+}
+.cell button:hover{
+    cursor: pointer;
+}
